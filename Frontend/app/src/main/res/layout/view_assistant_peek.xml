@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/peek_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|start"
+    android:layout_marginBottom="86dp"
+    android:layout_marginStart="14dp"
+    android:layout_marginEnd="14dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@drawable/bg_assistant_bubble"
+    android:paddingStart="8dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="9dp"
+    android:paddingBottom="9dp"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:elevation="22dp">
+
+    <FrameLayout
+        android:id="@+id/peek_avatar"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <View
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:background="@drawable/bg_assistant_badge" />
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_poly"
+            android:contentDescription="Поли" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/peek_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:maxWidth="240dp"
+        android:textColor="#FEF9E7"
+        android:textSize="13.5sp"
+        android:lineHeight="18sp" />
+</LinearLayout>

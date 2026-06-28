@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_navigation"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:orientation="horizontal"
+    android:background="#0A1F2D"
+    android:elevation="8dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="12dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/nav_map"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true">
+
+        <View
+            android:id="@+id/icon_map"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/ic_map_inactive" />
+
+        <TextView
+            android:id="@+id/text_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Карта"
+            android:textSize="14sp"
+            android:textColor="#FEF9E7"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nav_quizzes"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true">
+
+        <View
+            android:id="@+id/icon_quizzes"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/ic_quizzes_inactive" />
+
+        <TextView
+            android:id="@+id/text_quizzes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Квизы"
+            android:textSize="14sp"
+            android:textColor="#FEF9E7"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nav_rating"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true">
+
+        <View
+            android:id="@+id/icon_rating"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/ic_rating_inactive" />
+
+        <TextView
+            android:id="@+id/text_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Рейтинг"
+            android:textSize="14sp"
+            android:textColor="#FEF9E7"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nav_profile"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true">
+
+        <View
+            android:id="@+id/icon_profile"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/ic_profile_inactive" />
+
+        <TextView
+            android:id="@+id/text_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Профиль"
+            android:textSize="14sp"
+            android:textColor="#FEF9E7"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+</LinearLayout>

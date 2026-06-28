@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/quiz_option_bg"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:elevation="1dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/tv_option_letter"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:background="@drawable/bg_rank_badge"
+        android:backgroundTint="#F1E7DB"
+        android:gravity="center"
+        android:text="А"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#BA5C32"
+        android:layout_marginEnd="14dp" />
+
+    <TextView
+        android:id="@+id/tv_option_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="15sp"
+        android:textColor="#1B261F" />
+
+    <ImageView
+        android:id="@+id/iv_check"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="10dp"
+        android:visibility="gone" />
+
+</LinearLayout>

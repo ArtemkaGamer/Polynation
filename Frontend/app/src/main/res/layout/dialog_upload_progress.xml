@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg_card_white_rounded"
+    android:paddingHorizontal="28dp"
+    android:paddingTop="30dp"
+    android:paddingBottom="28dp">
+
+    <FrameLayout
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="18dp">
+
+        <View
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:background="@drawable/bg_icon_circle_orange" />
+
+        <ProgressBar
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:indeterminateTint="#BA5C32" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Загрузка фотографий"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#0A1F2D"
+        android:gravity="center"
+        android:layout_marginBottom="6dp" />
+
+    <TextView
+        android:id="@+id/tv_upload_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Подождите немного"
+        android:textSize="13.5sp"
+        android:fontFamily="sans-serif"
+        android:textColor="#0A1F2D"
+        android:alpha="0.65"
+        android:gravity="center" />
+</LinearLayout>

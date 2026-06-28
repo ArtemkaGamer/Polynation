@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:id="@+id/prompt_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_card_white_rounded"
+        android:padding="22dp"
+        android:elevation="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <FrameLayout
+                android:layout_width="44dp"
+                android:layout_height="44dp">
+
+                <View
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/bg_assistant_badge" />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_poly"
+                    android:contentDescription="Поли" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:text="Поли"
+                android:textColor="#1B261F"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:fontFamily="sans-serif-medium" />
+
+            <ImageButton
+                android:id="@+id/prompt_close"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_close"
+                app:tint="#BA5C32"
+                android:contentDescription="Закрыть" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/prompt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Ура, новое место!"
+            android:textColor="#BA5C32"
+            android:textStyle="bold"
+            android:textSize="21sp"
+            android:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:id="@+id/prompt_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="#3A3026"
+            android:textSize="14.5sp"
+            android:lineHeight="22sp" />
+
+        <Button
+            android:id="@+id/prompt_yes"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:text="Да, добавить фото"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_primary_orange"
+            android:textColor="#FEF9E7" />
+
+        <Button
+            android:id="@+id/prompt_later"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:text="Позже"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_outline_dark"
+            android:textColor="#0A1F2D" />
+    </LinearLayout>
+</FrameLayout>
